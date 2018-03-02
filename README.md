@@ -1,2 +1,2 @@
-# C-
+# C++ Repository
 My C++ Projects
