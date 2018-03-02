@@ -56,7 +56,7 @@ void gotoxy(int x, int y) //FUNCION PARA CREAR y UTILIZAR EL GOTOXY
     SetConsoleCursorPosition(hCon,dwPos);
 }
 
-void pintar() // FUNCION PARA crear el escenario del juego.
+void Crear_Tablero() // FUNCION PARA crear el escenario del juego.
 { 
 	 
 	 // Líneas dobles horizontales
@@ -198,7 +198,7 @@ int main() //Main
 {	
 	//setlocale(LC_ALL,"spanish"); // Esta funcion puede servir para mostrar caracteres en español. (en este juego no es necesaria)
 		restart:
-		pintar();
+		Crear_Tablero();
 		gotoxy(cox,coy);
 		printf("%c", 42);
 		while(tecla != ESC && gameover())
@@ -238,7 +238,7 @@ int main() //Main
 				printf("Puedes proceder a cerrar la ventana de juego.");
     		}
 		}
-		pintar();
+		Crear_Tablero();
 		creditos();
 		system("Pause>null");
 		return 0;
